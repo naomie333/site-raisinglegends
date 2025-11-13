@@ -1,0 +1,70 @@
+html{
+	box-sizing: border-box;
+}
+*, *::before, *,::after{
+	box-sizing: inherit;
+}
+body{
+	font-family: bell mt;
+	display: flex;
+	justify-content: center;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+	align-items: center;
+	background: url(images/logo.jpg) no-repeat top center / cover;
+}
+.invitation{
+	display: flex;
+	background: linear-gradiant(45deg, red blue);
+	
+	flex-flow: column wrap;
+	align-items: center;
+}
+form{
+	border: 10px double #BFA6A0;
+	display: flex;
+	max-width: fit-content;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;  /*l'espace*/
+	
+}
+
+form div{
+	display:flex;
+	gap: 1em;
+}
+/*pour styliser une partie du formulare*/
+fieldset{
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	gap: 1em;
+	padding:1em 1rem; /**/
+	
+} 
+.submit{
+	background: #87b;
+	color: white;
+	padding:6px 1em ;
+	border-radius: 15px;
+	box-shadow: 2px 2px white;
+	font-weight: bold;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.reset{
+	background: #eee;
+	color: #800;
+	padding:6px 1em ;
+	border-radius: 15px;
+	box-shadow: 2px 2px white;
+	font-weight: bold;
+	margin-bottom: 5px;
+	cursor: pointer;
+	
+}
